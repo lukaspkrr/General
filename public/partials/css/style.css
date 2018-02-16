@@ -1,0 +1,183 @@
+.body{
+    background-color: black;
+}
+
+#logo{
+    color: #ff4141;
+    text-shadow: 0px 0px 20px red;
+    font-weight: 900;
+}
+
+.optionGames{
+    margin: 10px;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 0px 0px 20px #656565;
+}
+
+.option{
+    margin:16px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #ff4141;
+    box-shadow: 0px 0px 20px red;
+}
+
+.check{
+    background-color: #5bbf4d;
+    box-shadow: 0px 0px 20px #00ff27;
+}
+
+.image{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: left;
+}
+
+.imageRoll{
+    width: 104px;
+    height: 104px;
+    cursor: pointer;
+    border-radius: 11px;
+    box-shadow: 0px 0px 20px #7b7b7b;
+}
+
+.hold{
+   cursor: pointer;
+   box-shadow: 0px 0px 20px #f5ff00; 
+}
+
+.hold:hover{
+   box-shadow: 0px 0px 40px #f5ff00; 
+   transition: box-shadow 0.2s;
+}
+
+.played{
+   height: 90px;
+   position: absolute;
+    margin-left: -97px;
+}
+
+.content{
+    margin-left: 60px;
+    margin-top: 7px;
+    border: solid 2px #6f1515;
+    border-radius: 50px;
+    background-color: #6f1515;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+.content-name{
+    position: absolute;
+    margin-top: -73px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 0px 0px 5px white;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 145px;
+    text-align: center;
+}
+
+.content-text{
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+}
+
+.rollContent{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.buttonRoll{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 45px;
+    padding-left: 45px;
+    font-weight: bold;
+    border-top: solid 0px black;
+    border-right: solid 0px black;
+    border-left: solid 0px black;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    text-shadow: 0px 0px 10px #555555;
+    box-shadow: 0px 0px 10px #145f0a;
+    border-bottom: solid 6px #145f0a;
+    background-color: #5bbf4d;
+    transition: box-shadow 1s;
+}
+
+.again{
+    box-shadow: 0px 0px 10px #b26711;
+    border-bottom: solid 6px #b26711;
+    background-color: #eda450;
+}
+
+.buttonRoll:hover{
+    text-shadow: 0px 0px 10px #c3c3c3;
+    box-shadow: 0px 0px 20px #00ff27;
+    transition: text-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+
+.again:hover{
+    box-shadow: 0px 0px 20px #ffba00;
+}
+
+.buttonRoll:active{
+    border-bottom: solid 0px #145f0a;
+    border-right: solid 0px #145f0a;
+    border-left: solid 0px #145f0a;
+    margin-top: 26px;
+}
+
+.buttonRoll:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.rolls{
+    height: 90px;
+    margin-left: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.esquerda{
+    margin-left: 30px;
+}
+
+.zerar{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transform: rotate(0deg);
+    position: relative;
+    margin-bottom: -40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px white;
+    filter: brightness(250%);
+    display: inherit;
+}
+
+.zerar:hover {
+    transform: rotate(-55deg);
+    box-shadow: 0px 0px 20px white;
+    transition: 0.2s;
+}

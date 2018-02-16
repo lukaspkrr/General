@@ -1,0 +1,55 @@
+<nav class="navbar navbar-inverse bg-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" id="logo" href="#">GENERAL</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Entrar</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container col-md-12">
+    <div class="optionGames col-md-4">
+        <div ng-repeat="choice in choices">
+            <div class="hide" id="zero"><img class="zerar" ng-click="zerarOption(choice.index)" id="imagemZerar{{choice.index}}" src="partials/img/zerar3.png" alt=""></div>
+            <div class="option col-md-5" id="choice{{choice.index}}" ng-click="choiceOption(choice.index)">
+                <div class="image"><img class="image" ng-src="partials/img/{{choice.img}}" alt=""></div>
+                <div class="content">
+                    <p class="content-text">Pontuação<br>{{choice.pontos}}</p>
+                </div>
+                <div class="content-name">{{choice.name}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="optionGames col-md-12">
+            <div class="col-md-2 rollContent">
+                <img class="imageRoll" ng-click="hold(this.id)" id="dice1" src="partials/img/logo.png" alt="">
+            </div>
+            <div class="col-md-2 rollContent">
+                <img class="imageRoll" ng-click="hold(this.id)" id="dice2" src="partials/img/logo.png" alt="">
+            </div>
+            <div class="col-md-2 rollContent">
+                <img class="imageRoll" ng-click="hold(this.id)" id="dice3" src="partials/img/logo.png" alt="">
+            </div>
+            <div class="col-md-2 rollContent">
+                <img class="imageRoll" ng-click="hold(this.id)" id="dice4" src="partials/img/logo.png" alt="">
+            </div>
+            <div class="col-md-2 rollContent">
+                <img class="imageRoll" ng-click="hold(this.id)" id="dice5" src="partials/img/logo.png" alt="">
+            </div>
+            <div class="col-md-7">
+                <img class="rolls" src="partials/img/rolls.png" alt="">
+                <img class="played hide" id="played1" src="partials/img/played.png" alt="">
+                <img class="rolls esquerda" src="partials/img/rolls.png" alt="">
+                <img class="played hide" id="played2" src="partials/img/played.png" alt="">
+                <img class="rolls esquerda" src="partials/img/rolls.png" alt="">
+                <img class="played hide" id="played3" src="partials/img/played.png" alt="">
+            </div>
+            <div class="col-md-5">
+                <input type="button" class="buttonRoll" id="buttonRoll" ng-click="rollDice()" value="Rolar os Dados" />
+            </div>
+        </div>
+    </div>
+</div>
